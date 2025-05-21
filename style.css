@@ -1,0 +1,194 @@
+
+
+/* MENU */
+
+ * {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 80px;
+    background: linear-gradient(
+        90deg,
+        rgb(18, 203, 188)0%,
+        rgb(93, 28, 233) 90%
+    );
+}
+
+
+
+
+
+
+.menu {
+position: absolute;
+top: 10px;
+left: 0%;
+right: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+.logo {
+
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+
+.menu .navbar ul li {
+
+position: relative;
+float: left;
+
+}
+
+.menu .navbar ul li a{
+
+    font-size: 18px;
+    padding: 20px;
+    color: rgb(255, 251, 0);
+    display: block;
+    font-weight: bold;
+
+}
+
+.menu .navbar ul li a { 
+
+color: white;
+
+}
+
+#menu {
+
+display: none;
+
+}
+
+
+.menu-icon { 
+
+width: 25px;
+
+}
+
+
+.menu label {
+    cursor: pointer;
+    display: none;
+
+}
+
+/* h1 h2 {
+    margin: 80px 0 0 350px;
+} */
+
+@media(max-width=991px) {
+
+.content{
+    min-height: 70px;
+}
+
+
+.menu {
+top: 0;
+padding: 20px;    
+}
+
+.menu label { 
+    display: initial;
+}
+
+
+.menu .navbar {
+
+    position: absolute;
+    top: 1;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        90deg,
+        rgb(18, 203, 188)0%,
+        rgb(93, 28, 233) 90%
+    );
+    display: none;
+
+}
+
+#menu:checked ~ .navbar {
+display: initial;
+}
+
+}
+
+/* FONDOS */
+
+/* body{
+    margin: 0;
+    padding: 0;
+    background: url(img/foto1.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(img/foto1.png);   
+    background-size:cover;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat:no-repeat;
+
+} 
+
+
+/* TT */
+
+h1 h2 {
+    margin: 80px 0 0 350px;
+}
+
+.descripcion {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 8px;
+  transition: max-height 1.5s ease, opacity 1.5s ease; /* transición lenta */
+}
+
+.producto:hover .descripcion {
+  max-height: 100px;
+  opacity: 1;
+}
+
+    .logo2 {
+      width: 20px;      /* tamaño pequeño */
+      height: auto;     /* mantiene proporción */
+      display: block;
+      margin: 20px auto;
+    }

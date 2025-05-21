@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>777</title>
+
+    <style>
+        body {
+          background-image:url('img/foto1.png')
+        }
+
+      </style> 
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+<img id="logo2" src="img/icon.jp" alt="">
+
+<header>
+
+<div class="content">
+
+    <div class="menu container">
+        <a href="pag1.html" class="logo">EL MEZCAL DE MEXICO</a>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+        <img src="img/agave1.jpg" class="menu-icono">
+    </label>
+    <nav class="navbar">
+    <ul>
+        <li><a href="pag1.html">INICIO</a></li>
+        <li><a href="expag1.html">HISTORIA</a></li>
+        <li><a href="expag2.html">RECOMENDACIONES</a></li>
+        <li><a href="expag3.html">TIENDAS</a></li>
+    </ul>
+</nav>
+    <div>
+    
+</div>
+    
+</header>
+
+       <!-- <audio id="Audios" src="aud/a2.mp3" controls autoplay></audio>
+
+        <script>
+        const audio = document.getElementById("Audios");
+        audio.volume = 0.5; 
+        </script> -->
+
+<br>
+<center><h1 style="color: white;">EL MEZCAL</h1>
+
+<br>
+
+<h2 style="color: chartreuse;">ESTE ES SU PROCESO DE ELABORACION</h2>
+
+<img src="img/ELA.png" alt="">
+
+<br>
+
+<br>
+
+<br>
+<br>
+<div>
+
+<h1 style="color: rebeccapurple; font-family:Arial, Helvetica, sans-serif;">PROCESO DE ELABORACION</h1>
+
+</div>
+<br>
+<br>
+
+<!-- <video src="video/video1.mp4" 
+frameborder="1"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscree
+width="600px" height="400px" controls> -->
+
+
+<video id="video" width="320" controls>
+  <source src="video/video1.mp4" type="video/mp4">
+</video>
+<br>
+<audio id="audio"  autoplay loop>
+  <source src="aud/a1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const v = document.getElementById('video');
+  const a = document.getElementById('audio');
+    audio.volume = 0.5; 
+  v.onplay = () => a.pause();
+  v.onpause = () => a.play();
+  a.onplay = () => v.pause();
+</script>
+    </center>
+</body>
+</html>
